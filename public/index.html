@@ -1,17 +1,163 @@
-<!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Henry Nino</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<noscript><link rel="stylesheet" href="./css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon solid major fa-cog"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Henry Nino</h1>
+								<p>Full-stack developer, bilingual Industrial Engineer;<br />
+									Visit my <a href="https://github.com/HenryNino03">GitHub</a>.</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">About</a></li>
+								<li><a href="#work">Skills</a></li>
+								<li><a href="#about">Experience</a></li>
+								<li><a href="#contact">Contact Me</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">About</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<div align="justify">
+								<p>I am a curious, well organized empirical person; I'm characterized by reasoning and common sense. I like to
+									question my surroundings and look for answers impatiently. Throughout my 5+ years of Engineering experience, I led agricultural and construction projects.
+									I recently did an 800-hour bootcamp at the National University of Colombia, where I gained knowledge in Web App Development using SCRUM.
+								</p>			
+								</div>
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">Skills</h2>
+								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<div align="justify">
+								<p> Knowledge in programming languages ​​such as 
+									Python, Java, C ++ and JavaScript, as well as HTML, CSS, SQL and GraphQL. 
+									in addition to the use of technologies such as JIRA, Heroku, VisualStudioCode,IntelliJ, NetBeans among others. 
+									I’m also an industrial engineer with 5+ years of experience. 
+
+								</p>
+								</div>
+							</article>
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">Projects</h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<h3>Bank - Fullstack - MicroServices - Graphql
+									2021</h3>
+								<div align="justify">
+								<p>
+									System that allows responding to the requirements registration and authentication in a bank. This system allows you to manage a part of the operations carried out by its users.
+									It also allows users to access two main services: managing their savings accounts and making transactions between accounts.
+									It is made with Django, Spring, Vue and Postgre and an ApiREST with node.js and the Apollo server
+									</p>
+								<h3>Hardware Store - Fullstack - APIRest
+									2021
+									</h3>
+								<p>web application developed with django, vue, and PostgreSQL with which articles from a small local store are published online. It also allows users to register to obtain discounts.
+									This allows carrying out all the necessary tasks to generate an order in the warehouse that creates a view of it with all the information of the clients in a shopping cart for the administrator
+								</p>
+								<h3>Social Network - Fullstack
+									2021
+									</h3>
+								<p>web application developed with Spring, django, vue, MongoDb and GraphQL with which you can create personal
+									 portfolios to connect with companies in a social network of human talent
+								</p>
+								<p>you can visit my repository on <a href="https://github.com/HenryNino03">GitHub</a>, and my <a href="https://henrynino.herokuapp.com/#">Website</a></p> 
+								</div>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact Me</h2>
+								<div id="cnt-form">
+									<form id="contact-form" class="contact" name= "contact-form" method="post" action="https://formsubmit.co/ing.davidnino@gmail.com">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" class = 'form-control name-field' id="name" required/>
+												<i class='fas fa-user'></i>
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="email" name="email" class = 'form-control email-field' id="email" required=/>
+												<i class='fas fa-envelope'></i>
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" class = 'form-control' required= 'required' rows="4"></textarea>
+											
+											</div>
+
+										</div>
+										<div>
+											<ul class="actions">
+						
+												<li><button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button></li>
+											
+												<li><input type="reset" value="Reset" /></li>
+												
+											</ul>
+											</div>
+									</div>
+
+
+								</form>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/HenryNino03" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+
+						
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; HenryNino<a href="https://github.com/HenryNino03"></a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="./js/jquery.min.js"></script>
+			<script src="./js/browser.min.js"></script>
+			<script src="./js/breakpoints.min.js"></script>
+			<script src="./js/util.js"></script>
+			<script src="./js/main.js"></script>
+
+			
+
+	</body>
 </html>
